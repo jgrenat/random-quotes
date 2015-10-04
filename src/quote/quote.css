@@ -1,0 +1,79 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #daf0f8;
+}
+
+.view-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.quote {
+  width: 60%;
+  margin: 0;
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  font-style: italic;
+  line-height: 1.45;
+  color: #383838;
+}
+
+@media (max-width: 1200px) {
+  .quote {
+    width: 90%;
+  }
+}
+
+.quote-author {
+  color: #999999;
+  font-size: 1.5rem;
+  display: block;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.quote-author:before, .quote-author:after {
+  content: "\2009 \2014 \2009";
+}
+
+.quoteButton {
+  position: relative;
+  margin-top: 2rem;
+  min-height: 3rem;
+  padding: 0.4rem 2rem;
+  border: 4px solid lightblue;
+  background: none;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  font-family: Arial, serif;
+  font-style: italic;
+}
+
+.quoteButton:hover, .quoteButton:focus {
+  background-color: lightblue;
+}
+
+.quoteButton:active, .quoteButton:focus {
+  outline: none;
+  border: 4px solid lightblue;
+}
+
+.quoteButton:active:before, .quoteButton:focus:before {
+  content: ' ';
+  border-radius: 20px;
+  position: absolute;
+  border: 2px dashed white;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
