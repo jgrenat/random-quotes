@@ -4,7 +4,7 @@
   "description": "Application that displays a random quote",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "codeceptjs run --steps",
     "postinstall": "jspm install",
     "build": "./src/scripts/build.sh",
     "prestart": "jspm unbundle",
