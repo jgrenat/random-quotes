@@ -1,20 +1,18 @@
 System.config({
-  "baseURL": "/",
-  "transpiler": "babel",
-  "babelOptions": {
+  //baseURL: "./",
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime"
     ]
   },
-  "paths": {
-    "*": "*.js",
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
-  }
-});
+  paths: {
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  },
 
-System.config({
-  "map": {
+  map: {
     "babel": "npm:babel-core@5.8.22",
     "babel-runtime": "npm:babel-runtime@5.8.20",
     "backbone": "npm:backbone@1.2.1",
@@ -23,7 +21,7 @@ System.config({
     "css": "github:systemjs/plugin-css@0.1.13",
     "handlebars": "github:components/handlebars.js@3.0.3",
     "hbs": "github:davis/plugin-hbs@1.0.0",
-    "jquery": "github:components/jquery@2.1.4",
+    "jquery": "npm:jquery@2.2.0",
     "json": "github:systemjs/plugin-json@0.1.0",
     "underscore": "npm:underscore@1.8.3",
     "github:davis/plugin-hbs@1.0.0": {
@@ -171,4 +169,3 @@ System.config({
     }
   }
 });
-
