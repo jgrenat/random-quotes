@@ -11,7 +11,6 @@ Scenario('I have a button to change the quote', (I) => {
 
 Scenario('I find test', (I) => {
   I.amOnPage('/');
-  pause();
   I.waitForText('Test');
 });
 
