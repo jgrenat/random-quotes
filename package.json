@@ -8,7 +8,7 @@
     "postinstall": "jspm install",
     "build": "./src/scripts/build.sh",
     "prestart": "jspm unbundle",
-    "start": "live-server src",
+    "start": "live-server src --port=55795",
     "clean": "rimraf dist",
     "codecept": "codeceptjs init"
   },
